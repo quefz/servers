@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "editorconfig.editorconfig",
+        "mhutchie.git-graph",
+        "onecentlin.laravel-blade",
+        "bmewburn.vscode-intelephense-client",
+        "mehedidracula.php-namespace-resolver"
+    ]
+}
