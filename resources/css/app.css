@@ -12,6 +12,12 @@ main {
     margin-top: 10px;
 }
 
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1200px;

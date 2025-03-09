@@ -7,9 +7,9 @@
     <body>
         <header>
             <div class = 'container'>
-                <h1 class = 'title'>
+                <div class = 'title'>
                     {{ config('app.name') }}
-                </h1>
+                </div>
             </div>
         </header>
         <main>
