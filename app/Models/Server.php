@@ -14,4 +14,8 @@ class Server extends Model
     public function sites() {
         return $this->hasMany(Site::class);
     }
+
+    public function databases() {
+        return $this->hasMany(Database::class);
+    }
 }
