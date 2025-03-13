@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-    <p>This is my body content.</p>
+    <a href = "{{ route('servers.index') }}">Servers</a>
 @endsection
