@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-    <a href = "{{ route('servers.create') }}">Add server</a>
-    <table>
+    <a href = "{{ route('servers.create') }}" class = 'btn btn-success'>Add server</a>
+    <table class = 'table'>
         <thead>
             <tr>
-                <td>Id</td>
-                <td>Name</td>
-                <td>IP</td>
+                <th scope = 'col'>Id</th>
+                <th scope = 'col'>Name</th>
+                <th scope = 'col'>IP</th>
             </tr>
         </thead>
         <tbody>
@@ -15,7 +15,8 @@
                 <tr>
                     <td>{{ $server->id }}</td>
                     <td>
-                        <a href = "{{ route('servers.show', $server) }}">{{ $server->name }}</a>
+                        <a href = "{{ route('servers.show', $server) }}"
+                            class = 'btn btn-primary btn-sm'>{{ $server->name }}</a>
                     </td>
                     <td>{{ $server->ip }}</td>
                 </tr>

@@ -17,26 +17,20 @@
             </div>
         @endif
 
-        <div>
-            <div>
-                <label for = "name">Name</label>
-            </div>
-            <div>
-                @dump(old('name'))
-                @dump($server->name)
-                <input id = "name" name = "name" value = "{{ old('name') ?
-                                    old('name') : $server->name }}" required>
-            </div>
+        <div class = 'form-group'>
+            <label for = 'name'>Name</label>
+            <input class = 'form-control' id = 'name' name = 'name'
+                value = "{{ old('name') ?: $server->name }}" required>
         </div>
 
         <div>
-            <div>
-                <label for = "ip">IP</label>
-            </div>
-            <div>
-                <input id = "ip" name = "ip" value = "{{ $server->ip }}" disabled>
-            </div>
+            <label for = 'ip'>IP</label>
+            <input class = 'form-control' id = 'ip' name = 'ip'
+                value = "{{ old('ip') }}" disabled>
         </div>
-        <input type = "submit" value = "Save">
+
+        <div class = 'mt-2'>
+            <input type = "submit" class = 'btn btn-success' value = "Save">
+        </div>
     </form>
 @endsection

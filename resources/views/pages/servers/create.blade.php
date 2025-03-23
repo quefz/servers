@@ -15,23 +15,19 @@
                 </url>
             </div>
         @endif
-        <div>
-            <div>
-                <label for = "name">Name</label>
-            </div>
-            <div>
-                <input id = "name" name = "name" value = "{{ old('name') }}" required>
-            </div>
+
+        <div class = 'form-group'>
+            <label for = 'name'>Name</label>
+            <input class = 'form-control' id = 'name' name = 'name' value = "{{ old('name') }}" required>
         </div>
 
         <div>
-            <div>
-                <label for = "ip">IP</label>
-            </div>
-            <div>
-                <input id = "ip" name = "ip" value = "{{ old('ip') }}" required>
-            </div>
+            <label for = 'ip'>IP</label>
+            <input class = 'form-control' id = 'ip' name = 'ip' value = "{{ old('ip') }}" required>
         </div>
-        <input type = "submit" value = "Add">
+
+        <div class = 'mt-2'>
+            <input type = "submit"  class = 'btn btn-success' value = "Add">
+        </div>
     </form>
 @endsection
