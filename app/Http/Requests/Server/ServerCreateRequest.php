@@ -25,7 +25,7 @@ class ServerCreateRequest extends FormRequest
     {
         return [
             'name' => ['required', 'string'],
-            'ip' => ['required', 'string'],
+            'ip' => ['required', 'string', 'unique:servers,ip'],
         ];
     }
 }
